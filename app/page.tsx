@@ -1,9 +1,15 @@
-import Image from "next/image";
+import SideBar from "../components/SideBar/page";
+import NaveBare from "@/components/NaveBar/page";
+import About from "@/components/About/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      welcome fihry portfolio
+    <main>
+      <SideBar />
+      <div className="main-content">
+      <NaveBare />
+       <About />
+      </div>
     </main>
   );
 }
