@@ -1,4 +1,7 @@
 import React from 'react'
+import Image from 'next/image'
+import Images from '@/public/Images/imageData.json'
+
 
 export default function About() {
     return (
@@ -10,9 +13,9 @@ export default function About() {
 
         <section className="about-text">
                 <p>
-                        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-                        I enjoy
-                        turning complex problems into simple, beautiful and intuitive designs.
+                    I&apos;m Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I enjoy
+                    turning complex problems into simple, beautiful and intuitive designs.
                 </p>
 
                 <p>
@@ -29,14 +32,14 @@ export default function About() {
 
         <section className="service">
 
-                <h3 className="h3 service-title">What i'm doing</h3>
+                <h3 className="h3 service-title">What i&apos;m doing</h3>
 
                 <ul className="service-list">
 
                         <li className="service-item">
 
                                 <div className="service-icon-box">
-                                        <img src="/images/icon-design.svg" alt="design icon" width="40" />
+                                        <Image src={Images.iconDesign} alt="design icon" width="40" height="40" />
                                 </div>
 
                                 <div className="service-content-box">
@@ -52,7 +55,7 @@ export default function About() {
                         <li className="service-item">
 
                                 <div className="service-icon-box">
-                                        <img src="/images/icon-dev.svg" alt="Web development icon" width="40" />
+                                        <Image src={Images.iconDev} alt="Web development icon" width="40" height="40" />
                                 </div>
 
                                 <div className="service-content-box">
@@ -68,7 +71,7 @@ export default function About() {
                         <li className="service-item">
 
                                 <div className="service-icon-box">
-                                        <img src="/images/icon-app.svg" alt="mobile app icon" width="40" />
+                                        <Image src={Images.iconApp} alt="mobile app icon" width="40" height="40"/>
                                 </div>
 
                                 <div className="service-content-box">
@@ -84,7 +87,7 @@ export default function About() {
                         <li className="service-item">
 
                                 <div className="service-icon-box">
-                                        <img src="/images/icon-photo.svg" alt="camera icon" width="40" />
+                                        <Image src={Images.iconPhoto} alt="camera icon" width="40" height="40" />
                                 </div>
 
                                 <div className="service-content-box">
@@ -114,7 +117,7 @@ export default function About() {
                                 <div className="content-card" data-testimonials-item>
 
                                         <figure className="testimonials-avatar-box">
-                                                <img src="/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar />
+                                                <Image src={Images.avatarOne} alt="Daniel lewis" width="60" height="60" data-testimonials-avatar />
                                         </figure>
 
                                         <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
@@ -136,7 +139,7 @@ export default function About() {
                                 <div className="content-card" data-testimonials-item>
 
                                         <figure className="testimonials-avatar-box">
-                                                <img src="/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar />
+                                                <Image src={Images.avatarTow} alt="Jessica miller" width="60" height="60" data-testimonials-avatar />
                                         </figure>
 
                                         <h4 className="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
@@ -158,7 +161,7 @@ export default function About() {
                                 <div className="content-card" data-testimonials-item>
 
                                         <figure className="testimonials-avatar-box">
-                                                <img src="/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar></img>
+                                                <Image src={Images.avatarTree} alt="Emily evans" width="60" height="60" data-testimonials-avatar />
                                         </figure>
 
                                         <h4 className="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
@@ -181,7 +184,7 @@ export default function About() {
 
                                         <figure className="testimonials-avatar-box"></figure>
                                         <figure className="testimonials-avatar-box">
-                                                <img src="/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar></img>
+                                                <Image src={Images.avatarFore} alt="Henry william" width="60" height="60" data-testimonials-avatar/>
                                         </figure>
 
                                         <h4 className="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
@@ -219,10 +222,10 @@ export default function About() {
                         <div className="modal-img-wrapper">
             {/* <ion-icon name="close-outline"></ion-icon> */}
                                 <figure className="modal-avatar-box">
-                                        <img src="/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                                        <Image src={Images.avatarOne} alt="Daniel lewis" width="60" height="60" data-modal-img />
                                 </figure>
 
-                                <img src="/images/icon-quote.svg" alt="quote icon" />
+                                <Image src="../../images/icon-quote.svg" alt="quote icon" width="40" height="40" />
                         </div>
 
                         <div className="modal-content">
@@ -258,37 +261,37 @@ export default function About() {
 
                         <li className="clients-item">
                                 <a href="#">
-                                        <img src="/images/logo-1-color.png" alt="client logo" />
+                                        <Image src={Images.logoOneColor} alt="client logo" height="60" width="40" />
                                 </a>
                         </li>
 
                         <li className="clients-item">
                                 <a href="#">
-                                        <img src="/images/logo-2-color.png" alt="client logo" />
+                                        <Image src={Images.logoTowColor} alt="client logo" height="60" width="40" />
                                 </a>
                         </li>
 
                         <li className="clients-item">
                                 <a href="#">
-                                        <img src="/images/logo-3-color.png" alt="client logo" />
+                                        <Image src={Images.logoTreeColor} alt="client logo" width="60" height="40" />
                                 </a>
                         </li>
 
                         <li className="clients-item">
                                 <a href="#">
-                                        <img src="/images/logo-4-color.png" alt="client logo" />
+                                        <Image src={Images.logoForeColor} alt="client logo"  width="40" height="40"/>
                                 </a>
                         </li>
 
                         <li className="clients-item">
                                 <a href="#">
-                                        <img src="/images/logo-5-color.png" alt="client logo" />
+                                        <Image src={Images.logoFiveColor} alt="client logo"  width="40" height="40"/>
                                 </a>
                         </li>
 
                         <li className="clients-item">
                                 <a href="#">
-                                        <img src="/images/logo-6-color.png" alt="client logo" />
+                                        <Image src={Images.logoSexColor} alt="client logo"  width="40" height="40"/>
                                 </a>
                         </li>
 

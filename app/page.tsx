@@ -1,4 +1,4 @@
-import SideBar from "../components/SideBar/page";
+import SideBar from "@/components/SideBar/page";
 import NaveBare from "@/components/NaveBar/page";
 import About from "@/components/About/page";
 

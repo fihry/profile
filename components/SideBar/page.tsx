@@ -1,4 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
+import Images from '@/public/Images/imageData.json'
+
+
+
+
 
 export default function SideBar() {
   return (
@@ -7,13 +13,13 @@ export default function SideBar() {
     <div className="sidebar-info">
 
       <figure className="avatar-box">
-        <img src="https://avatars.githubusercontent.com/u/83623752?v=4" alt="Mohamed El-fihry" width="80"></img>
+        <Image src={Images.MyProfile} alt="Mohamed El-fihry" width="80" height="80" />
       </figure>
 
       <div className="info-content">
-        <h1 className="name" title="Mohamed El-fihry">Mohamed El-fihry</h1>
+        <h1 className="name" title="Mohamed El-fihry">EL-FIHRY</h1>
 
-        <p className="title">Web developer</p>
+        <p className="title" title='Fullstack'>Web developer</p>
       </div>
 
       <button className="info_more-btn" data-sidebar-btn>
