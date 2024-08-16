@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Images from '@/public/Images/imageData.json'
-
+import { TbMail,TbChevronDown,TbPhone,TbCalendar,TbLocation, TbBrandFacebook, TbBrandTwitter, TbBrandInstagram } from "react-icons/tb";
 
 
 
@@ -13,11 +13,11 @@ export default function SideBar() {
     <div className="sidebar-info">
 
       <figure className="avatar-box">
-        <Image src={Images.MyProfile} alt="Mohamed El-fihry" width="80" height="80" />
+        <Image src={Images.MyProfile} alt="Mohamed El Fihry" width="80" height="80" />
       </figure>
 
       <div className="info-content">
-        <h1 className="name" title="Mohamed El-fihry">EL-FIHRY</h1>
+        <h1 className="name" title="Mohamed El Fihry">EL-FIHRY</h1>
 
         <p className="title" title='Fullstack'>Web developer</p>
       </div>
@@ -25,7 +25,7 @@ export default function SideBar() {
       <button className="info_more-btn" data-sidebar-btn>
         <span>Show Contacts</span>
 
-        {/* <ion-icon name="chevron-down"></ion-icon> */}
+        <TbChevronDown />
       </button>
 
     </div>
@@ -39,7 +39,7 @@ export default function SideBar() {
         <li className="contact-item">
 
           <div className="icon-box">
-            {/* <ion-icon name="mail-outline"></ion-icon> */}
+            <TbMail />
           </div>
 
           <div className="contact-info">
@@ -53,7 +53,7 @@ export default function SideBar() {
         <li className="contact-item">
 
           <div className="icon-box">
-            {/* <ion-icon name="phone-portrait-outline"></ion-icon> */}
+            <TbPhone />
           </div>
 
           <div className="contact-info">
@@ -67,13 +67,13 @@ export default function SideBar() {
         <li className="contact-item">
 
           <div className="icon-box">
-            {/* <ion-icon name="calendar-outline"></ion-icon> */}
+            <TbCalendar />
           </div>
 
           <div className="contact-info">
             <p className="contact-title">Birthday</p>
 
-            <time dateTime="1982-06-23">June 23, 1982</time>
+            <time dateTime="1982-06-23">Nov 02, 2001</time>
           </div>
 
         </li>
@@ -81,13 +81,13 @@ export default function SideBar() {
         <li className="contact-item">
 
           <div className="icon-box">
-            {/* <ion-icon name="location-outline"></ion-icon> */}
+            <TbLocation />
           </div>
 
           <div className="contact-info">
             <p className="contact-title">Location</p>
 
-            <address>Sacramento, California, USA</address>
+            <address>Larache,morocco</address>
           </div>
 
         </li>
@@ -100,19 +100,19 @@ export default function SideBar() {
 
         <li className="social-item">
           <a href="#" className="social-link">
-            {/* <ion-icon name="logo-facebook"></ion-icon> */}
+            <TbBrandFacebook />
           </a>
         </li>
 
         <li className="social-item">
           <a href="#" className="social-link">
-            {/* <ion-icon name="logo-twitter"></ion-icon> */}
+            <TbBrandTwitter />
           </a>
         </li>
 
         <li className="social-item">
           <a href="#" className="social-link">
-            {/* <ion-icon name="logo-instagram"></ion-icon> */}
+            <TbBrandInstagram/>
           </a>
         </li>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Images from '@/public/Images/imageData.json'
+import { TbX } from "react-icons/tb";
 
 
 export default function About() {
@@ -13,9 +14,8 @@ export default function About() {
 
         <section className="about-text">
                 <p>
-                    I&apos;m Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-                    I enjoy
-                    turning complex problems into simple, beautiful and intuitive designs.
+                I&apos;m Fullstack Developer from Larache City, working in web development and UI/UX design.
+                I enjoy turning complex problems into efficient, scalable, and maintainable solutions.
                 </p>
 
                 <p>
@@ -23,7 +23,7 @@ export default function About() {
                         Moreover, I
                         add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
                         across your
-                        message and identity in the most creative way. I created web design for many famous brand companies.
+                        message and identity in the most creative way.
                 </p>
         </section>
 
@@ -216,16 +216,16 @@ export default function About() {
                 <section className="testimonials-modal">
 
                         <button className="modal-close-btn" data-modal-close-btn>
-                                {/* ... */}
+                               CLOSE
                         </button>
 
                         <div className="modal-img-wrapper">
-            {/* <ion-icon name="close-outline"></ion-icon> */}
+                                <TbX />
                                 <figure className="modal-avatar-box">
                                         <Image src={Images.avatarOne} alt="Daniel lewis" width="60" height="60" data-modal-img />
                                 </figure>
 
-                                <Image src="../../images/icon-quote.svg" alt="quote icon" width="40" height="40" />
+                                <Image src={Images.iconQuote} alt="quote icon" width="40" height="40" />
                         </div>
 
                         <div className="modal-content">
