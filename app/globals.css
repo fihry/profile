@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2022 @codewithfihry
  */
 
 
@@ -692,7 +692,7 @@ main {
 .modal-close-btn:hover,
 .modal-close-btn:focus { opacity: 1; }
 
-.modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
+.modal-close-btn svg { stroke-width: 50px; }
 
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
@@ -1332,7 +1332,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: max-content; }
 
   .sidebar-info { gap: 25px; }
 
@@ -1355,7 +1355,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: var(--fs-8);
   }
 
-  .info_more-btn ion-icon { display: none; }
+  .info_more-btn svg{ display: none; }
 
   .separator { margin: 32px 0; }
 
